@@ -1,0 +1,57 @@
+/* Complementos de la interfaz original (styles.css se conserva sin cambios). */
+
+/* Foco visible para quien navega con teclado (RNF-04). */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Mensajes del servidor en el formulario de reserva y en las pantallas de acceso. */
+.aviso { border-radius: 8px; padding: 11px 13px; font-size: .84rem; margin-bottom: 14px; }
+.aviso-ok { background: #dfeccf; color: #24512d; }
+.aviso-error { background: #f7dcd3; color: #7a2410; }
+.error-campo { color: #a02c10; font-weight: 500; font-size: .74rem; }
+
+/* Enlaces de cuenta dentro del menú desplegable (en móvil no se ven los botones superiores). */
+.solo-menu-movil { display: none; }
+
+/* El diseño original ocultaba el menú entre 721 y 1000 px sin ofrecer botón para abrirlo. */
+@media (max-width: 1000px) {
+  .menu-toggle { display: block; margin-left: 8px; }
+  .nav-actions { margin-left: auto; }
+  .navbar.mobile-open .nav-links {
+    display: flex; position: absolute; top: 78px; left: 14px; right: 14px;
+    background: #231914; padding: 18px; border-radius: 12px; flex-direction: column; z-index: 5;
+  }
+}
+@media (max-width: 720px) {
+  .menu-toggle { margin-left: auto; }
+  .solo-menu-movil { display: block; font-weight: 700; }
+}
+
+/* Contraste legible sobre el tono terracota de los indicadores (referencia WCAG AA). */
+.stats div { color: #2d1a11; }
+.mini-label, .featured-dish p, .daily-menu p { color: #fff; }
+.daily-menu span { background: rgba(60, 25, 10, .35); }
+.btn-green { background: #357f45; }
+.location-cards a { color: var(--brown-dark); }
+
+/* Pantallas de acceso: reutilizan la tarjeta del formulario de reservas. */
+.acceso { min-height: 100vh; display: grid; place-items: center; padding: 32px 16px; background: var(--bg); }
+.acceso-caja { width: min(440px, 100%); }
+.acceso .brand { align-items: center; margin-bottom: 20px; text-align: center; }
+.acceso .brand strong { color: var(--brown-dark); font-size: 1.5rem; }
+.acceso .brand-top { color: var(--brown); }
+.acceso .reservation-form h1 { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin: 0 0 16px; }
+.acceso-pie { margin: 14px 0 0; font-size: .84rem; text-align: center; color: var(--muted); }
+.acceso-pie a { color: var(--brown-dark); font-weight: 700; text-decoration: underline; }
+.acceso .ayuda { font-weight: 400; color: var(--muted); font-size: .72rem; }
+
+/* Pantallas de error. */
+.error-pagina { text-align: center; }
+.error-pagina .codigo { font-family: 'Playfair Display', serif; font-size: 4rem; line-height: 1; color: var(--brown); margin: 0; }
+.error-pagina h1 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin: 10px 0; }
+.error-pagina p { color: var(--muted); }
+.error-pagina .btn { margin-top: 8px; }
+.error-pagina .btn-dark { color: #fff; }
+.error-detalle { text-align: left; font-size: .75rem; overflow-wrap: anywhere; background: #f2e9e0; padding: 10px; border-radius: 6px; }

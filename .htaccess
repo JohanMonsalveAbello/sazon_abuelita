@@ -1,0 +1,11 @@
+# Todo el tráfico entra por public/. Así app/, config/, database/, storage/,
+# tests/ y .env nunca son accesibles desde el navegador.
+Options -Indexes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^public/ - [L]
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+<IfModule !mod_rewrite.c>
+    Require all denied
+</IfModule>

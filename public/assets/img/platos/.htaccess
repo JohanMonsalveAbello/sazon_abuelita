@@ -1,0 +1,7 @@
+# Carpeta de fotos subidas: nunca se ejecuta código aquí.
+<FilesMatch "\.(php|phtml|phar|pl|py|cgi|sh|shtml)$">
+    Require all denied
+</FilesMatch>
+<IfModule php_module>
+    php_flag engine off
+</IfModule>

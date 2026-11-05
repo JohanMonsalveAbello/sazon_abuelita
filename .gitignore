@@ -1,0 +1,6 @@
+.env
+storage/logs/*.log
+tests/resultados/*.tmp
+public/assets/img/platos/*
+!public/assets/img/platos/.gitkeep
+!public/assets/img/platos/.htaccess

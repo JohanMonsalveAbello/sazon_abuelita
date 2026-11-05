@@ -1,0 +1,10 @@
+Options -Indexes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Archivos reales (css, js, imágenes) se sirven directo; el resto va al front controller.
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L,QSA]
+</IfModule>
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>

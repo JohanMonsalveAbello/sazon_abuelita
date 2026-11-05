@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="El Sazón de la Abuela - Restaurante colombiano en Bogotá." />
+  <title>El Sazón de la Abuela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="navbar container">
+      <a href="#inicio" class="brand">
+        <span class="brand-top">Restaurante</span>
+        <strong>El Sazón de la Abuela</strong>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#galeria">Galería</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#ubicacion">Ubicación</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn btn-light" href="#reservas">Reservar</a>
+        <a class="btn btn-outline" href="#">Crear Cuenta</a>
+        <a class="btn btn-green" href="#">Login</a>
+      </div>
+    </nav>
+
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <span class="eyebrow light">Bogotá, Colombia</span>
+      <h1>Donde la Tradición<br><span>se hace Sabor</span></h1>
+      <p>Descubre la auténtica gastronomía colombiana en un ambiente cálido y acogedor. Cada plato cuenta una historia de tradición y pasión.</p>
+      <div class="hero-buttons">
+        <a class="btn btn-gold" href="#menu">Ver Menú</a>
+        <a class="btn btn-dark" href="#reservas">Reservar Mesa</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about" id="nosotros">
+      <div class="container two-col">
+        <img src="assets/img/historia.jpg" alt="Plato tradicional servido en El Sazón de la Abuela" class="about-img" />
+        <div class="about-copy">
+          <span class="eyebrow">Nuestra Historia</span>
+          <h2>Un Legado de<br><span>Sabor Colombiano</span></h2>
+          <p>Desde 2009, <strong>El Sazón de la Abuela</strong> ha sido el punto de encuentro para amantes de la buena comida colombiana en el corazón de Bogotá. Nuestra historia comenzó con una simple misión: compartir los sabores auténticos de nuestra tierra con cada comensal que cruza nuestras puertas.</p>
+          <p>Nos especializamos en cocina tradicional colombiana, desde el reconfortante ajiaco bogotano hasta la abundante bandeja paisa. Cada receta ha sido perfeccionada a lo largo de los años, manteniendo la esencia de los sabores que nos definen.</p>
+
+          <div class="feature-grid">
+            <article><div class="icon">🌿</div><div><h3>Ingredientes Frescos</h3><p>Productos locales seleccionados diariamente de los mejores proveedores.</p></div></article>
+            <article><div class="icon">❤</div><div><h3>Hecho con Amor</h3><p>Cada plato es preparado con la pasión y dedicación de nuestros chefs.</p></div></article>
+            <article><div class="icon">🍲</div><div><h3>Tradición Auténtica</h3><p>Recetas tradicionales colombianas transmitidas por generaciones.</p></div></article>
+            <article><div class="icon">🏠</div><div><h3>Ambiente Familiar</h3><p>Un espacio cálido donde cada visita se convierte en un momento especial.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-title center">
+          <span class="eyebrow">Nuestra Carta</span>
+          <h2>Menú</h2>
+          <p>Explora nuestra selección de platos tradicionales colombianos, preparados con los mejores ingredientes y mucho amor.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrar menú">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="entradas">Entradas</button>
+          <button class="filter" data-filter="sopas">Sopas</button>
+          <button class="filter" data-filter="fuertes">Platos Fuertes</button>
+          <button class="filter" data-filter="bebidas">Bebidas</button>
+          <button class="filter" data-filter="postres">Postres</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="dish-card" data-category="fuertes">
+            <div class="dish-photo"><img src="assets/img/bandeja-paisa.jpg" alt="Bandeja Paisa"><span>Popular</span></div>
+            <div class="dish-body"><div class="dish-head"><h3>Bandeja Paisa</h3><strong>$42.000</strong></div><p>Frijoles, arroz, carne molida, chicharrón, chorizo, huevo, aguacate, arepa y patacón.</p></div>
+          </article>
+          <article class="dish-card" data-category="sopas">
+            <div class="dish-photo"><img src="assets/img/ajiaco.jpg" alt="Ajiaco Santafereño"><span>Popular</span></div>
+            <div class="dish-body"><div class="dish-head"><h3>Ajiaco Santafereño</h3><strong>$32.000</strong></div><p>Sopa tradicional bogotana con pollo, tres tipos de papa, mazorca, guascas, crema y alcaparras.</p></div>
+          </article>
+          <article class="dish-card" data-category="sopas">
+            <div class="dish-photo"><img src="assets/img/sancocho.jpg" alt="Sancocho de Res"></div>
+            <div class="dish-body"><div class="dish-head"><h3>Sancocho de Res</h3><strong>$35.000</strong></div><p>Caldo tradicional con costilla de res, yuca, plátano, papa, mazorca y cilantro.</p></div>
+          </article>
+          <article class="dish-card" data-category="entradas">
+            <div class="dish-photo"><img src="assets/img/chorizo.jpg" alt="Chorizo Santarrosano"><span>Picante</span></div>
+            <div class="dish-body"><div class="dish-head"><h3>Chorizo Santarrosano</h3><strong>$18.000</strong></div><p>Chorizo artesanal a la parrilla con arepa, hogao y limón.</p></div>
+          </article>
+          <article class="dish-card" data-category="entradas">
+            <div class="dish-photo"><img src="assets/img/empanadas.jpg" alt="Empanadas de la Casa"><span>Popular</span></div>
+            <div class="dish-body"><div class="dish-head"><h3>Empanadas de la Casa</h3><strong>$12.000</strong></div><p>Empanadas crujientes rellenas de carne o pollo, servidas con ají casero.</p></div>
+          </article>
+          <article class="dish-card" data-category="fuertes">
+            <div class="dish-photo"><img src="assets/img/tamal.jpg" alt="Tamal Tolimense"></div>
+            <div class="dish-body"><div class="dish-head"><h3>Tamal Tolimense</h3><strong>$15.000</strong></div><p>Tamal tradicional envuelto en hoja de plátano con pollo, cerdo, arroz y verduras.</p></div>
+          </article>
+          <article class="dish-card" data-category="fuertes">
+            <div class="dish-photo"><img src="assets/img/lechona.jpg" alt="Lechona Tolimense"><span>Tradicional</span></div>
+            <div class="dish-body"><div class="dish-head"><h3>Lechona Tolimense</h3><strong>$38.000</strong></div><p>Cerdo relleno de arroz, arvejas y especias, servido con arepa.</p></div>
+          </article>
+          <article class="dish-card" data-category="bebidas">
+            <div class="dish-photo"><img src="assets/img/limonada-coco.jpg" alt="Limonada de Coco"><span>Vegano</span></div>
+            <div class="dish-body"><div class="dish-head"><h3>Limonada de Coco</h3><strong>$8.000</strong></div><p>Refrescante limonada con crema de coco, perfecta para acompañar cualquier plato.</p></div>
+          </article>
+          <article class="dish-card" data-category="postres">
+            <div class="dish-photo"><img src="assets/img/postre-natas.jpg" alt="Postre de Natas"></div>
+            <div class="dish-body"><div class="dish-head"><h3>Postre de Natas</h3><strong>$10.000</strong></div><p>Tradicional postre bogotano con natas de leche, canela y azúcar.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section specialties" id="especialidades">
+      <div class="container">
+        <div class="section-title center">
+          <span class="eyebrow">Lo Mejor de El Sazón de la Abuela</span>
+          <h2>Nuestras Especialidades</h2>
+          <p>Platos que han conquistado el paladar de miles de comensales y se han convertido en favoritos de nuestra clientela.</p>
+        </div>
+
+        <article class="featured-dish">
+          <img src="assets/img/ajiaco.jpg" alt="Ajiaco Bogotano">
+          <div>
+            <span class="mini-label">El Plato Estrella de la Casa</span>
+            <h3>Ajiaco Bogotano</h3>
+            <p>Nuestra versión del clásico ajiaco santafereño, preparado con tres tipos de papa, pollo desmenuzado, mazorca tierna y el toque especial de guascas frescas.</p>
+            <div class="meta"><span>⏱ 45 min</span><span>👥 1-2 personas</span><span>★ 4.9 (324 reseñas)</span></div>
+            <a href="#reservas" class="btn btn-dark">Reservar para Probar</a>
+          </div>
+          <strong class="price-pill">$32.000</strong>
+        </article>
+
+        <article class="daily-menu">
+          <span>Menú del Día</span>
+          <h3>Almuerzo Ejecutivo desde $18.000</h3>
+          <p>De lunes a viernes disfruta de nuestro menú ejecutivo con sopa, plato fuerte, bebida y postre incluidos.</p>
+          <a href="#menu" class="btn btn-gold">Ver Opciones</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reservation" id="reservas">
+      <div class="container reservation-grid">
+        <div class="reservation-info">
+          <span class="eyebrow">Reservaciones</span>
+          <h2>Reserva tu<br><span>Mesa Ahora</span></h2>
+          <p>Asegura tu lugar en El Sazón de la Abuela. Completa el formulario o contáctanos directamente por WhatsApp o teléfono para una reservación inmediata.</p>
+          <div class="contact-card whatsapp"><strong>WhatsApp</strong><span>Respuesta inmediata</span><b>+57 300 123 4567</b></div>
+          <div class="contact-card phone"><strong>Llámanos directamente</strong><span>+57 (601) 765 4321</span></div>
+          <div class="hours-card"><strong>Horarios de Atención</strong><p>Lunes - Viernes <span>11:30 AM - 10:00 PM</span></p><p>Sábado <span>12:00 PM - 11:00 PM</span></p><p>Domingo <span>12:00 PM - 8:00 PM</span></p></div>
+        </div>
+
+        <form class="reservation-form" id="reservationForm">
+          <h3>Formulario de Reserva</h3>
+          <div class="form-row"><label>Nombre Completo<input name="nombre" type="text" placeholder="Tu nombre" required></label><label>Teléfono<input name="telefono" type="tel" placeholder="300 123 4567" required></label></div>
+          <label>Correo Electrónico<input name="correo" type="email" placeholder="tu@email.com" required></label>
+          <div class="form-row three"><label>Fecha<input name="fecha" type="date" required></label><label>Hora<select name="hora" required><option value="">Seleccionar</option><option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option></select></label><label>Personas<select name="personas" required><option value="">Seleccionar</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></label></div>
+          <label>Mensaje o Solicitud Especial<textarea name="mensaje" rows="5" placeholder="Alergias, celebraciones, preferencias..."></textarea></label>
+          <button type="submit" class="btn btn-green full">Enviar Reserva por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section-title center"><span class="eyebrow">Galería</span><h2>Nuestro Espacio</h2><p>Conoce nuestro restaurante, nuestra cocina y nuestros platos a través de estas imágenes.</p></div>
+        <div class="gallery-grid">
+          <img class="big" src="assets/img/ajiaco.jpg" alt="Ajiaco colombiano">
+          <img src="assets/img/terraza.jpg" alt="Terraza del restaurante">
+          <img src="assets/img/bandeja-paisa.jpg" alt="Bandeja paisa">
+          <img src="assets/img/cocina.jpg" alt="Cocina del restaurante">
+          <img src="assets/img/restaurante-1.jpg" alt="Interior del restaurante">
+          <img src="assets/img/postre-natas.jpg" alt="Postre colombiano">
+          <img src="assets/img/restaurante-2.jpg" alt="Mesa servida">
+          <img src="assets/img/restaurante-3.jpg" alt="Ambiente cálido del restaurante">
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="opiniones">
+      <div class="container">
+        <div class="section-title center"><span class="eyebrow">Testimonios</span><h2>Lo Que Dicen Nuestros<br>Clientes</h2><p>La satisfacción de nuestros comensales es nuestro mayor orgullo. Conoce sus experiencias en El Sazón de la Abuela.</p></div>
+        <div class="stats"><div><strong>4.9</strong><span>Calificación Google</span></div><div><strong>1,200+</strong><span>Reseñas Positivas</span></div><div><strong>98%</strong><span>Clientes Satisfechos</span></div><div><strong>15+</strong><span>Años de Experiencia</span></div></div>
+        <div class="testimonial-grid">
+          <article><div class="stars">★★★★★</div><p>“El mejor ajiaco que he probado en mi vida. Me transportó a la cocina de mi abuela. El servicio es impecable y el ambiente muy acogedor.”</p><strong>María Fernanda López</strong><span>Bogotá</span></article>
+          <article><div class="stars">★★★★★</div><p>“Vine buscando una buena bandeja paisa fuera de mi ciudad y la encontré aquí. Abundante, deliciosa y con todos los elementos perfectos.”</p><strong>Carlos Andrés Mejía</strong><span>Medellín</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location" id="ubicacion">
+      <div class="container">
+        <div class="section-title center"><span class="eyebrow">Ubicación</span><h2>Nuestra Ubicación</h2><p>Estamos ubicados en el corazón de Bogotá, con fácil acceso desde cualquier punto de la ciudad.</p></div>
+        <div class="location-grid">
+          <img src="assets/img/mapa.jpg" alt="Mapa de ubicación del restaurante" class="map-img">
+          <div class="location-cards">
+            <article><h3>📍 Dirección</h3><p>Carrera 15 #82-58, Zona G<br>Bogotá D.C., Colombia</p><a href="https://www.google.com/maps/search/?api=1&query=Carrera+15+%2382-58+Bogota" target="_blank" rel="noopener">Abrir en Google Maps →</a></article>
+            <article><h3>🕒 Horarios de Atención</h3><p>Lunes - Viernes <span>11:30 AM - 10:00 PM</span></p><p>Sábado <span>12:00 PM - 11:00 PM</span></p><p>Domingo y Festivos <span>12:00 PM - 8:00 PM</span></p></article>
+            <article><h3>☎ Contacto Directo</h3><p>+57 300 123 4567<br>+57 (601) 765 4321</p></article>
+            <article><h3>🚍 Cómo Llegar</h3><p><strong>TransMilenio</strong><br>Estación Calle 85 - A 5 minutos caminando</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><div class="brand footer-brand"><span class="brand-top">Restaurante</span><strong>El Sazón de la Abuela</strong></div><p>Tradición colombiana servida con cariño.</p></div>
+      <div><strong>Enlaces</strong><a href="#menu">Menú</a><a href="#reservas">Reservas</a><a href="#ubicacion">Ubicación</a></div>
+      <div><strong>Contacto</strong><span>+57 300 123 4567</span><span>Bogotá D.C., Colombia</span></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> El Sazón de la Abuela. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
